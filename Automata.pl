@@ -1,4 +1,3 @@
-move(from, to, with).
 % By: Juan José Goyeneche Sánchez
 % A01712547
 % No: AA, CCB
