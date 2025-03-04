@@ -13,3 +13,4 @@ Apartir de esto sabemos que su universo es  Σ = A, B, C. Conociendo este hecho 
 
 
   
+((a(b|c))*((c*a)(c|b))*)*ab((a(b|c))*((c*a)(c|b))*)*
