@@ -18,7 +18,7 @@ El automata finito nace como un modelo matematico de una máquina que acepta cad
 #### Estado Terminal
 L
 
-## Casos Erroneos Most Not Have (It´s a Trapp): AA, CCB
+### Casos Erroneos Most Not Have (It´s a Trapp): AA, CCB
 Para asegurar que cuando existan los casos 'Must not have' deberemos de hacer que siempre que se escriban estas cadenas no se pueda llegar al estado terminal. ¿Como se consigue esto? Bueno pues deberemos crear un bucle donde tras la combinación de cadena AA o CCB se llegue al "Estado Trampa", ya estando en ese estado cualquier cadena que se introduzca (A,B,C), te llevaran de vuelta al mismo "Estado Trampa" asi evitando que se llegue nunca al estado terminal por lo cual fallara.  
 ![image](https://github.com/user-attachments/assets/2b4e8ff8-5807-42da-881c-acf0ef1dae74)
 
@@ -31,6 +31,10 @@ La cadena debera de tener en algun momento la combinación AB para poder ser ace
 
 Imagen Ejemplo Simbolica.
 
+### Expresion Regular
+
+
+![image](https://github.com/user-attachments/assets/f2e31af4-5873-4b05-b251-334291caae94)
 
 
   
