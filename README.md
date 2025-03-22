@@ -32,10 +32,12 @@ La cadena debera de tener en algun momento la combinación AB para poder ser ace
 Imagen Ejemplo Simbolica.
 
 ### Expresion Regular
+LAs expresiones regulares (R.E.) son equivalentes de los automatas, por lo cual todo automata puede ser descrito como expresion regular. Estas son una secuencia de caracteres que conforma un patrón de búsqueda. Se utilizan principalmente para la busqueda de patrones de cadenas, caracteres u operaciones de sustituciones. Tiene simbolos como indicaciónes que se podran apreciar en la tabla. 
+![image](https://github.com/user-attachments/assets/31f99ed6-b84c-436b-b97f-c959ce0e0ce2)
+Al inicio para traducir mi Automata a una expresion regular llegue a lo siguiente: ((a(b|c))*((c*a)(c|b))*)*ab((a(b|c))*((c*a)(c|b))*)*. Esta expersion podria ir bien encaminada, pero, necesitaria mas especificaciones para hacer la expresion correcta, lo cual nos dejaria con una expresion regular bastante larga.
 
+
+ ^(?=.*AB)(?!.*AA)(?!.*CCB)[ABC]+$
 
 ![image](https://github.com/user-attachments/assets/f2e31af4-5873-4b05-b251-334291caae94)
 
-
-  
-((a(b|c))*((c*a)(c|b))*)*ab((a(b|c))*((c*a)(c|b))*)*
