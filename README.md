@@ -5,6 +5,7 @@ De las opciones disponibles en el excel, se selecciono la opción 42 del tipo "M
 - Inputs: A, B, C
 - Must not have: AA,  CCB
 - Must have: AB
+  
 Ej:
 - Success: ABA, ACCABA, AB, CCABAC
 - Fail: A, CCCCA, ABAA, ACCBABA, ACACB
