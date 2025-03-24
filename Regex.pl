@@ -1,4 +1,8 @@
-
+% By: Juan José Goyeneche Sánchez
+% A01712547
+% No: AA, CCB
+% Must: AB
+% Regex: ^(?=
 regex(Lista) :-
     musthaveAB(Lista),
     mustNotAA(Lista),
