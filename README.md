@@ -39,7 +39,7 @@ LAs expresiones regulares (R.E.) son equivalentes de los automatas, por lo cual 
 
 ![image](https://github.com/user-attachments/assets/31f99ed6-b84c-436b-b97f-c959ce0e0ce2)
 
-Al inicio para traducir mi Automata a una expresion regular llegue a lo siguiente: ((a(b|c))*((c*a)(c|b))*)*ab((a(b|c))*((c*a)(c|b))*)*. Esta expersion podria ir bien encaminada, pero, necesitaria mas especificaciones para hacer la expresion correcta, lo cual nos dejaria con una expresion regular bastante larga, razon por la cuale se tuvo que investigar de mas herramienteas para escribir la expresion.
+Al inicio para traducir mi Automata a una expresion regular llegue a lo siguiente: __((a(b|c))*((c*a)(c|b))*)*ab((a(b|c))*((c*a)(c|b))*)*.__ Esta expersion podria ir bien encaminada, pero, necesitaria mas especificaciones para hacer la expresion correcta, lo cual nos dejaria con una expresion regular bastante larga, razon por la cuale se tuvo que investigar de mas herramienteas para escribir la expresion.
 
 #### Lookahead Positive | Negative
 El lookahead es una asersion que se usa para hacer busquedas de coincidencias dentro de la cadena.
@@ -54,10 +54,10 @@ Esta expresion encontrara toda expreion que en algun punto cuente con la cadena 
 
 Se hace uso de ".*" para que se siga buscando en toda la cadena, si la primera vez no se encontro.
 
-  punto (.): 
+  **punto (.):**
 Coincide con cualquier carácter individual, excepto con el carácter de nueva línea (\n).
 
- asterisco (*): 
+ **asterisco (*):** 
 Coincide con el carácter o grupo de caracteres anteriores de la expresión regular de cero o más veces.
 
 ![image](https://github.com/user-attachments/assets/7b78136d-35cf-4fdd-a8d9-8236e2f91a24)
