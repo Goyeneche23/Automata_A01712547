@@ -43,9 +43,9 @@ Al inicio para traducir mi Automata a una expresion regular llegue a lo siguient
 
 #### Lookahead Positive | Negative
 El lookahead es una asersion que se usa para hacer busquedas de coincidencias dentro de la cadena.
-
+'''
 X(?= Y)
-
+'''
 En este caso en un punto la expreion regular llegara a la X y el lookahead lo que hara sera buscar si depues de la X existe una coincidencia con una Y de manera inmediata, en caso de que no la haya, esta expresion la seguira buscando. Esta expresion encontrara "X" en "XY", pero no "X" en "XZ".
 
 ^(?=.*XYY)[XYZ]+$
