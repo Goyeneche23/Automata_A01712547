@@ -77,3 +77,5 @@ https://blog.fergv.com/js/regex/#condicionales
 https://support.google.com/a/answer/1371415?hl=es 
 
 https://www.ibm.com/docs/es/i/7.3?topic=expressions-regular
+
+https://lamaquinaoraculo.com/ciencias-computacion/automata-finito/
