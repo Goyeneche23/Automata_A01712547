@@ -14,6 +14,12 @@ mustNotAA(Lista) :- \+ isIn(['A','A'], Lista).
 
 mustNotCCB(Lista) :- \+ isIn(['C','C','B'], Lista).
 
-isIn(must, List) :-
-    append(_, RList, List),
-    append(must, _, RList).
+isIn([], _).  % Caso Base
+isIn(Must, Lista) :-
+    equivalente(Must, Lista).  % Verifica si Sub es prefijo de List
+isIn(Must, [_|Cola]) :-      % Si no, sigue buscando en la cola
+    isIn(Must, Cola).
+
+equivalente([], _).
+equivalente([H|ColaResto], [H|ListaResto]) :-
+    equivalente(ColaResto, ListaResto).
