@@ -49,10 +49,13 @@ En este caso en un punto la expreion regular llegara a la X y el lookahead lo qu
 ^(?=.*XYY)[XYZ]+$
 
 Esta expresion encontrara toda expreion que en algun punto cuente con la cadena "XYY", y solo se usen palabras del lenguaje XYZ. 
+
 Se hace uso de ".*" para que se siga buscando en toda la cadena, si la primera vez no se encontro.
-  punto (.)
+
+  punto (.): 
 Coincide con cualquier carácter individual, excepto con el carácter de nueva línea (\n).
- asterisco (*)
+
+ asterisco (*): 
 Coincide con el carácter o grupo de caracteres anteriores de la expresión regular de cero o más veces.
 
 ![image](https://github.com/user-attachments/assets/7b78136d-35cf-4fdd-a8d9-8236e2f91a24)
