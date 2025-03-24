@@ -30,7 +30,7 @@ Imagen ejemplo, Q2 seria el caso trampa (no debera ser terminal).
 ### Cadena Must Have (Puente de Khazad-dûm): AB
 La cadena debera de tener en algun momento la combinación AB para poder ser aceptada, ¿Como podemos realizar esto? Necesitaremos generar un "puente", el puente de Khazad-dûm le llamaremos. Este sera un puente que si queremos llegar a nuestro destino osease estados terminales lo deberemos de cruzar. La parte de antes y despues del puente deberan ser identicos o almenos equivalentes, porque las demas reglas deberan seguir existiendo, la unica diferencia es que en la sección despues del puente deberemos de incluir los estados terminales.
 
-![image](https://github.com/user-attachments/assets/21873c6e-bee5-4360-a184-ef1ccf0282cc)
+![image](https://github.com/user-attachments/assets/794832ee-ec74-4437-865c-c868bceea488)
 
 Imagen Ejemplo Simbolica.
 
