@@ -115,6 +115,17 @@ equivalente([H|ColaResto], [H|ListaResto]) :- % H==H
 ```
 Se explica con los comentarios en el code.
 
+### Complejidad
+La complejidad que tiene la función regex, al ejecutrse depende de varios factores, como el input de la lista que se haga asi, como tambien, las demas funciones que se llaman dentro de esta función.
+  - **Inisiación:** Se empezara creado la lista que haremos como entrada, esto tendra la complejidad de O(1).
+  - **Regex:** La funcion verificara que se cumplan las especificaciónes del regex esto llamara a 3 funciones que comparten complejidad pero son diferentes.
+  - **Caso Base**: El caso base isIn([],_) tendra una complejidad de o(1).
+  - **Recursividad Completa:** Cada función mustHave... llamara a isIn(), la cual llamara (en caso de no estar vacia) a equivalentes(), y a si misma. La complejidad de esto asi como del codigo entero sera la suma de todo el analisis y la complejidad de esta funcion dependera del tipo de entrada que se le de osea la lista.
+```
+o(1) + o(1) + o(n) + o(n) + o(n) = o(n)
+```
+  - **Mejor caso**: o(k * n), k > 1, = o(n).
+
 ### Referencias
 Mozilla Developer Network. (n.d.). Lookahead assertion. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
 
