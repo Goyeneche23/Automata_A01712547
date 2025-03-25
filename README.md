@@ -118,7 +118,7 @@ Se explica con los comentarios en el code.
 ### Referencias
 Mozilla Developer Network. (n.d.). Lookahead assertion. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
 
-Fernández, G. V. (n.d.). Expresiones regulares en JavaScript. Blog Fergv. https://blog.fergv.com/js/regex/#condicionales
+Fernández, G. V. (n.d.). Expresiones regulares en JavaScript. Blog Fergv. [](https://blog.fergv.com/js/regex/#condicionales)
 
 Google. (n.d.). Sintaxis de expresiones regulares. Google Workspace Admin Help. https://support.google.com/a/answer/1371415?hl=es
 
