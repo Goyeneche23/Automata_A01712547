@@ -126,6 +126,11 @@ o(1) + o(1) + o(n) + o(n) + o(n) = o(n)
 ```
   - **Mejor caso**: o(k * n), k > 1, = o(n).
 
+### Testing
+Se testeo primero en Swish Prolog, dando los siguientes resultados (izq Automata, der Regex):
+![image](https://github.com/user-attachments/assets/503a841c-8704-4c96-9ffa-12e462c14ca5)
+
+
 ### Referencias
 Mozilla Developer Network. (n.d.). Lookahead assertion. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
 
