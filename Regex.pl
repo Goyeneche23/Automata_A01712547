@@ -16,8 +16,8 @@ mustNotCCB(Lista) :- \+ isIn(['C','C','B'], Lista).
 
 isIn([], _).  % Caso Base
 isIn(Must, Lista) :-
-    equivalente(Must, Lista).  % Verifica si Sub es prefijo de List
-isIn(Must, [_|Cola]) :-      % Si no, sigue buscando en la cola
+    equivalente(Must, Lista). 
+isIn(Must, [_|Cola]) :-      
     isIn(Must, Cola).
 
 equivalente([], _).
