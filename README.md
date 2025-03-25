@@ -129,6 +129,8 @@ o(1) + o(1) + o(n) + o(n) + o(n) = o(n)
 ### Testing
 Se testeo primero en Swish Prolog, dando los siguientes resultados (izq Automata, der Regex):
 ![image](https://github.com/user-attachments/assets/503a841c-8704-4c96-9ffa-12e462c14ca5)
+Testeo con Regex en archivo C++.
+![image](https://github.com/user-attachments/assets/e90d5cfe-c3e1-45ff-bbed-16fea268b08e)
 
 
 ### Referencias
