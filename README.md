@@ -80,10 +80,14 @@ Esta misma funcion se podria simplificar a lo siguiente:
 
 
 ### Programación Regex
-Se programo esto tanto en C++, como en prolog. El codigo de C++ es bastante simple por lo cual nos centraremos en explicar la funcion que hace funcionar el codigo de prolog.
-
-
-
+Se programo esto tanto en C++, como en prolog. El codigo de C++ es bastante simple por lo cual nos centraremos en explicar el codigo de prolog.
+```
+regex(Lista) :-
+    musthaveAB(Lista),
+    mustNotAA(Lista),
+    mustNotCCB(Lista).
+```
+Esta función muestra la expresion regular como tal, dando las indicaciones que especifica la problematica.
 ```
 isIn([], _).  % Caso Base
 isIn(Must, Lista) :-
