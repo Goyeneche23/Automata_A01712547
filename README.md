@@ -78,6 +78,12 @@ Esta misma funcion se podria simplificar a lo siguiente:
 
 ![image](https://github.com/user-attachments/assets/8d8aac51-a44f-4bfd-bd56-d390b7e1ed24)
 
+
+### Programación Regex
+Se programo esto tanto en C++, como en prolog. El codigo de C++ es bastante simple por lo cual nos centraremos en explicar la funcion que hace funcionar el codigo de prolog.
+
+
+
 ```
 isIn([], _).  % Caso Base
 isIn(Must, Lista) :-
