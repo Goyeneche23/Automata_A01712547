@@ -24,7 +24,8 @@ Un estado terminal es en un autómata un estado final que se alcanza cuando el a
 Para asegurar que cuando existan los casos 'Must not have' deberemos de hacer que siempre que se escriban estas cadenas no se pueda llegar al estado terminal. ¿Como se consigue esto? Bueno pues deberemos crear un bucle donde tras la combinación de cadena AA o CCB se llegue al "Estado Trampa", ya estando en ese estado cualquier cadena que se introduzca (A,B,C), te llevaran de vuelta al mismo "Estado Trampa" asi evitando que se llegue nunca al estado terminal por lo cual fallara.  
 
 ![image](https://github.com/user-attachments/assets/2b4e8ff8-5807-42da-881c-acf0ef1dae74)
-__Imagen ejemplo, Q2 seria el caso trampa (no debera ser terminal).__
+
+Imagen ejemplo, Q2 seria el caso trampa (no debera ser terminal).
 
 ### Cadena Must Have (Puente de Khazad-dûm): AB
 La cadena debera de tener en algun momento la combinación AB para poder ser aceptada, ¿Como podemos realizar esto? Necesitaremos generar un "puente", el puente de Khazad-dûm le llamaremos. Este sera un puente que si queremos llegar a nuestro destino osease estados terminales lo deberemos de cruzar. La parte de antes y despues del puente deberan ser identicos o almenos equivalentes, porque las demas reglas deberan seguir existiendo, la unica diferencia es que en la sección despues del puente deberemos de incluir los estados terminales.
@@ -112,15 +113,15 @@ equivalente([], _). %Caso base para cuando se hayan comparando todos los element
 equivalente([H|ColaResto], [H|ListaResto]) :- % H==H
     equivalente(ColaResto, ListaResto). %Compara elementos hasta que subcadena este vacia
 ```
-
+Se explica con los comentarios en el code.
 
 ### Referencias
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
+Mozilla Developer Network. (n.d.). Lookahead assertion. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
 
-https://blog.fergv.com/js/regex/#condicionales
+Fernández, G. V. (n.d.). Expresiones regulares en JavaScript. Blog Fergv. https://blog.fergv.com/js/regex/#condicionales
 
-https://support.google.com/a/answer/1371415?hl=es 
+Google. (n.d.). Sintaxis de expresiones regulares. Google Workspace Admin Help. https://support.google.com/a/answer/1371415?hl=es
 
-https://www.ibm.com/docs/es/i/7.3?topic=expressions-regular
+IBM. (n.d.). Expresiones regulares. IBM Documentation. https://www.ibm.com/docs/es/i/7.3?topic=expressions-regular
 
-https://lamaquinaoraculo.com/ciencias-computacion/automata-finito/
+Benjaminiva, (n.d). Regular Expresions. https://docs.google.com/document/d/16_TvqEI5BKINc9mcenIDyCFd7nwTW8Kv1upZB4eO27U/edit?tab=t.0
