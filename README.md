@@ -17,6 +17,8 @@ Apartir de esto sabemos que su universo es  Σ = A, B, C. Conociendo este hecho 
 ### Automana Finito
 El automata finito nace como un modelo matematico de una máquina que acepta cadenas de un lenguaje definido, esta maquina tiene un conjunto finito de estados y las cadenas del lenguaje son las que determinaran las transciciones de entre estos estados. La primera aproximación a un modelo parecido la tuvo el matematico Ruso Andrei Markov con la cadena de Markov, donde la ocurrencia de cada evento depende con una cierta probabilidad del evento anterior. Posteriormente en el siglo XX se definieron de mejor manera los automatas finitos, pero lo que pasa en la cadena de Markov donde cada evento depende del anterior se sigue manteniendo de cierta manera. En nuestro caso tenemos solo A, B, C como lenguaje pero las combinaciones de estos son los que nos llevan a los estados, por lo cual la cadena "A" podra llegar a un estados diferente que la cadena "BA". Algo importante para continuar es que los Automatas no cuentan con una memoria por lo cual solo podran realizar lenguajes de tipo A^n B.
 
+**M=(Q,Σ,δ,q0,F)**
+
 ## Deterministico o no Deterministico
 Nosotros para este automata haremos uso de un modelo deterministico (AFD). Esto porque no existe ambiguedad en ninguna transición.
 Nota: El estado inicial sera Q0 (en el diagrama no se ve la flecha que lo determine).
