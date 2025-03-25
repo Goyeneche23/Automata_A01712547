@@ -88,17 +88,31 @@ regex(Lista) :-
     mustNotCCB(Lista).
 ```
 Esta función muestra la expresion regular como tal, dando las indicaciones que especifica la problematica.
+
+```
+musthaveAB(Lista) :- 
+    isIn(['A','B'], Lista).
+
+mustNotAA(Lista) :- 
+    \+ isIn(['A','A'], Lista).
+
+mustNotCCB(Lista) :- 
+    \+ isIn(['C','C','B'], Lista).
+```
+Se llamara a la funcion "isIn" para buscar la subCadena que se especifique. En los casos de "AA" y "CCB", se usara **\+** lo cual se denomina como no demostrable, en caso de que se encuentre la subCadena especificada sera una función falsa.
+
 ```
 isIn([], _).  % Caso Base
 isIn(Must, Lista) :-
-    equivalente(Must, Lista). 
+    equivalente(Must, Lista). %verifica si la subcadena esta en la lista
 isIn(Must, [_|Cola]) :-      
-    isIn(Must, Cola).
+    isIn(Must, Cola). %Se quita el primer valor de la lista yse sigue buscando en los siguientes valores de esta.
 
-equivalente([], _).
-equivalente([H|ColaResto], [H|ListaResto]) :-
-    equivalente(ColaResto, ListaResto).
+equivalente([], _). %Caso base para cuando se hayan comparando todos los elementos de la subcadena
+equivalente([H|ColaResto], [H|ListaResto]) :- % H==H
+    equivalente(ColaResto, ListaResto). %Compara elementos hasta que subcadena este vacia
 ```
+
 
 ### Referencias
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
