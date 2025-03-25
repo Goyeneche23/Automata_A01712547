@@ -8,11 +8,14 @@ regex(Lista) :-
     mustNotAA(Lista),
     mustNotCCB(Lista).
 
-musthaveAB(Lista) :- isIn(['A','B'], Lista).
+musthaveAB(Lista) :- 
+    isIn(['A','B'], Lista).
 
-mustNotAA(Lista) :- \+ isIn(['A','A'], Lista).
+mustNotAA(Lista) :- 
+    \+ isIn(['A','A'], Lista).
 
-mustNotCCB(Lista) :- \+ isIn(['C','C','B'], Lista).
+mustNotCCB(Lista) :- 
+    \+ isIn(['C','C','B'], Lista).
 
 isIn([], _).  % Caso Base
 isIn(Must, Lista) :-
