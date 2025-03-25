@@ -137,6 +137,9 @@ Testeo con Regex en archivo C++.
 ![image](https://github.com/user-attachments/assets/e90d5cfe-c3e1-45ff-bbed-16fea268b08e)
 
 
+### Conclusion 
+Como reflexion final, en este punto es facil ver donde tiene esto una utilidad, lo cual es en
+
 ### Referencias
 Mozilla Developer Network. (n.d.). Lookahead assertion. https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
 
