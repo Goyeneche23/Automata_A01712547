@@ -3,6 +3,8 @@
 % No: AA, CCB
 % Must: AB
 % Regex: ^(?=
+% Los comentarios se encuentran en el readme.md
+% Se espera que el usuario ponga letras de la cadena ABC
 regex(Lista) :-
     musthaveAB(Lista),
     mustNotAA(Lista),
