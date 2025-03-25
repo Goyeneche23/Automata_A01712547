@@ -61,13 +61,34 @@ Coincide con cualquier carácter individual, excepto con el carácter de nueva l
 Coincide con el carácter o grupo de caracteres anteriores de la expresión regular de cero o más veces.
 
 ![image](https://github.com/user-attachments/assets/7b78136d-35cf-4fdd-a8d9-8236e2f91a24)
+
+La expresion regular haciendo uso de los lookaheads, donde se especifique que se encuentre AB **"(?=.*AB)"**, y que no se identifique AA **"(?!.*AA)"**, ni CCB, **"(?!.*CCB)"**. Todo esto aceptando solo caracteres ABC, **"[ABC]"**.
+
 ```
 ^(?=.*AB)(?!.*AA)(?!.*CCB)[ABC]+$
 ```
+
+Esta misma funcion se podria simplificar a lo siguiente: 
+
+```
+^(?=.*AB)(?!.*AA|.*CCB)[ABC]+$
+```
+
 ![image](https://github.com/user-attachments/assets/f2e31af4-5873-4b05-b251-334291caae94)
 
 ![image](https://github.com/user-attachments/assets/8d8aac51-a44f-4bfd-bd56-d390b7e1ed24)
 
+```
+isIn([], _).  % Caso Base
+isIn(Must, Lista) :-
+    equivalente(Must, Lista). 
+isIn(Must, [_|Cola]) :-      
+    isIn(Must, Cola).
+
+equivalente([], _).
+equivalente([H|ColaResto], [H|ListaResto]) :-
+    equivalente(ColaResto, ListaResto).
+```
 
 ### Referencias
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Regular_expressions/Lookahead_assertion
